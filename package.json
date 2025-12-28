@@ -2,7 +2,7 @@
   "name": "minimakers",
   "version": "1.0.0",
   "scripts": {
-    "build": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/styles.min.css --minify"
+    "build": "node build.js"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.17"
