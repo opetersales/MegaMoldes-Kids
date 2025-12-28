@@ -1,0 +1,109 @@
+/* 
+ * Custom Styles & Overrides
+ * Extracted from inline styles for better organization.
+ */
+
+/* Placeholder Image Styling */
+.placeholder-image {
+    background-color: #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    font-weight: bold;
+    text-align: center;
+    border: 2px dashed #cbd5e1;
+}
+
+/* Add any additional custom CSS below */
+body {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+/* 
+ * RESTORED BUTTON STYLES 
+ * Fix for missing Tailwind classes in static build
+ */
+
+/* Utility Polyfills for Buttons */
+.bg-green-600 { background-color: #16a34a !important; }
+.hover\:bg-green-700:hover { background-color: #15803d !important; }
+.text-white { color: #ffffff !important; }
+.text-green-600 { color: #16a34a !important; } /* For text highlights */
+.rounded-full { border-radius: 9999px !important; }
+.shadow-xl { box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1) !important; }
+.hover\:shadow-2xl:hover { box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25) !important; }
+
+/* Animation Keyframes */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+.animate-bounce { animation: bounce 1s infinite; }
+
+/* Custom Button Class (Backup) */
+.btn-primary {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: #16a34a !important;
+    color: #ffffff !important;
+    border-radius: 9999px !important;
+    font-weight: 900 !important;
+    transition: all 0.2s !important;
+}
+.btn-primary:hover {
+    background-color: #15803d !important;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25) !important;
+}
+
+/* Additional Button Styles & Polyfills */
+
+/* Premium Button */
+.btn-premium {
+    background: linear-gradient(to right, #22c55e, #16a34a) !important;
+    color: #ffffff !important;
+    border-radius: 0.75rem !important;
+    display: block !important;
+    transition: all 0.3s ease !important;
+}
+.btn-premium:hover {
+    background: linear-gradient(to right, #16a34a, #15803d) !important;
+    transform: translateY(-0.25rem);
+}
+
+/* Basic Button */
+.btn-basic {
+    background-color: transparent !important;
+    border: 2px solid #d1d5db !important;
+    color: #6b7280 !important;
+}
+.btn-basic:hover {
+    background-color: #f3f4f6 !important;
+}
+
+/* Missing Utilities for Text/Colors */
+.text-gray-300 { color: #d1d5db !important; }
+.text-gray-400 { color: #9ca3af !important; }
+.text-gray-500 { color: #6b7280 !important; }
+.text-gray-600 { color: #4b5563 !important; }
+.text-gray-700 { color: #374151 !important; }
+.text-green-500 { color: #22c55e !important; }
+.text-red-400 { color: #f87171 !important; }
+
+/* Backgrounds & Borders */
+.bg-white { background-color: #ffffff !important; }
+.bg-gray-50 { background-color: #f9fafb !important; }
+.border-gray-300 { border-color: #d1d5db !important; }
+
+/* Border Radius */
+.rounded-xl { border-radius: 0.75rem !important; }
+.rounded-2xl { border-radius: 1rem !important; }

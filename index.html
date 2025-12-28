@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/vendor.css" data-precedence="next">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/styles.min.css">
+<!-- Scripts removidos para evitar conflito com a edição estática -->
+<title>MegaMoldes Kids - Diversão Longe das Telas</title>
+<meta name="description" content="A maneira mais rápida, fácil e econômica de tirar as crianças das telas.">
+
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preload" as="image" href="assets/img/hero-image-v2.png" fetchpriority="high">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" sizes="16x16">
+<script>document.querySelectorAll('body link[rel="icon"], body link[rel="apple-touch-icon"]').forEach(el => document.head.appendChild(el))</script>
+<script src="assets/js/polyfills.js" nomodule=""></script>
+</head>
+<body class="font-body antialiased">
+    <!-- Dynamic Date Scarcity Bar (Fixed Header) -->
+    <div class="fixed top-0 left-0 w-full bg-red-600 text-white text-center py-3 font-bold z-50 shadow-md">
+        <div class="container mx-auto text-xs md:text-base tracking-wide px-4">
+            ⚠️ ATENÇÃO: O preço promocional de lançamento acaba HOJE, <span id="dynamic-date"></span>, às 23:59.
+        </div>
+    </div>
+    <!-- Spacer to prevent content overlap -->
+    <div class="h-[44px] md:h-[48px]"></div>
+
+<div class="bg-background text-foreground overflow-x-hidden">
+
+<!-- SEÇÃO 1: O HOOK (A Dobra) - Fundo Branco -->
+<section class="w-full pb-8 pt-0 md:pb-24 lg:pb-32 bg-white">
+    <!-- Barra de Aviso Antiga Removida -->
+
+    <div class="container px-4 md:px-6 pt-8 md:pt-12">
+        <div class="grid gap-6 lg:grid-cols-1 items-center justify-items-center">
+            <div class="flex flex-col justify-center space-y-4 md:space-y-6 text-center">
+                <!-- Pre-Headline -->
+                <p class="text-sm md:text-xl font-bold text-red-600 tracking-wide uppercase">
+                    Cansado de ver seu filho zumbificado na frente do tablet o dia todo?
+                </p>
+                
+                <!-- HEADLINE (H1) -->
+                <h1 class="text-3xl md:text-5xl lg:text-7xl font-extrabold tracking-tight leading-tight text-gray-900">
+                    A MANEIRA MAIS <span class="text-green-600">RÁPIDA</span>, <span class="text-green-600">FÁCIL</span> E <span class="text-green-600">ECONÔMICA</span> DE TIRAR AS CRIANÇAS DAS <span class="text-red-600 decoration-4 underline decoration-red-600/30">TELAS</span> E ATIVAR A CRIATIVIDADE NESTAS FÉRIAS
+                </h1>
+
+                <!-- Sub-Headline (H2) -->
+                <p class="max-w-[800px] text-gray-600 text-base md:text-2xl mx-auto font-medium">
+                    Esqueça brinquedos caros que duram 5 minutos. Tenha acesso imediato ao Megapack com <strong>+1.200 Moldes</strong> que transformam papel em horas de diversão cognitiva.
+                </p>
+
+                <!-- Imagem -->
+                <div class="flex justify-center pt-8 w-full">
+                    <picture>
+                        <source srcset="assets/img/hero-image-v2.avif" type="image/avif">
+                        <source srcset="assets/img/hero-image-v2.webp" type="image/webp">
+                        <img alt="Megapack PaperCraft Kids" fetchpriority="high" width="600" height="400" decoding="async" class="w-full h-auto max-w-full rounded-xl shadow-2xl border-4 border-white transform hover:scale-105 transition-transform duration-500" src="assets/img/hero-image-v2.png">
+                    </picture>
+                </div>
+
+                <!-- Botão de CTA -->
+                <div class="w-full max-w-md space-y-3 mx-auto pt-8">
+                    <button onclick="document.getElementById('pricing-section').scrollIntoView({behavior: 'smooth'})" class="btn-primary inline-flex items-center justify-center gap-2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-full px-6 py-4 w-full text-lg md:text-xl h-auto min-h-[4rem] bg-green-600 hover:bg-green-700 text-white font-black shadow-xl animate-bounce hover:shadow-2xl leading-tight">
+                        QUERO COMEÇAR AGORA
+                    </button>
+                    <p class="text-sm text-gray-500 font-medium">
+                        🔒 Download imediato + acesso vitalício
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SEÇÃO 2: A AGITAÇÃO DO PROBLEMA (Story) - Fundo Cinza Claro -->
+<section class="w-full py-10 md:py-24" style="background-color: #F0F2F5;">
+    <div class="container px-4 md:px-6">
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div class="space-y-6 text-center md:text-left">
+                <h2 class="text-2xl md:text-3xl font-extrabold tracking-tighter sm:text-4xl text-gray-900">
+                    A Batalha Contra as Telas Está Perdida? <br><span class="text-red-600">(Não Mais)</span>
+                </h2>
+                <div class="space-y-4 text-lg text-gray-700 leading-relaxed">
+                    <p>Você ama seu filho, mas sejamos honestos: <strong>é exaustivo tentar competir com o YouTube e os jogos viciantes.</strong></p>
+                    <p>O resultado? Crianças <strong>ansiosas</strong>, <strong>sem paciência</strong> e <strong>sem coordenação motora fina</strong>.</p>
+                    <p>Você já tentou comprar brinquedos caros, mas eles enjoam em dois dias. Você tentou proibir o celular, e virou uma <strong>guerra em casa</strong>.</p>
+                    <p class="font-bold text-gray-900 border-l-4 border-red-500 pl-4">Você precisa de algo que seja tão estimulante quanto um jogo, mas que seja real, tátil e desenvolva o cérebro.</p>
+                </div>
+            </div>
+            <!-- Imagem Emocional (Problema) -->
+            <div class="h-80 w-full rounded-xl shadow-inner bg-white overflow-hidden">
+                <picture>
+                    <source srcset="assets/img/crianca-celular.avif" type="image/avif">
+                    <source srcset="assets/img/crianca-celular.webp" type="image/webp">
+                    <img src="assets/img/crianca-celular.jpg" alt="Criança entediada no celular" class="w-full h-full object-cover">
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SEÇÃO 3: A SOLUÇÃO (A Nova Oportunidade) - Fundo Branco -->
+<section class="w-full py-16 md:py-24 bg-white">
+    <div class="container px-4 md:px-6">
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <!-- Imagem Emocional (Solução) -->
+            <div class="h-80 w-full rounded-xl shadow-lg order-2 md:order-1 bg-green-50 border-green-200 overflow-hidden">
+                <picture>
+                    <source srcset="assets/img/crianca-feliz-papercraft.avif" type="image/avif">
+                    <source srcset="assets/img/crianca-feliz-papercraft.webp" type="image/webp">
+                    <img src="assets/img/crianca-feliz-papercraft.png" alt="Criança feliz montando papercraft" class="w-full h-full object-cover">
+                </picture>
+            </div>
+
+            <div class="space-y-6 text-center md:text-left order-1 md:order-2">
+                <h2 class="text-3xl font-extrabold tracking-tighter sm:text-4xl text-gray-900">
+                    A Engenharia de Papel: O Segredo para o <span class="text-green-600">Foco Absoluto</span>
+                </h2>
+                <div class="space-y-4 text-lg text-gray-700 leading-relaxed">
+    <p>Imagine seu filho <strong>focado por 45 minutos</strong>, recortando, dobrando e colando... em <strong>silêncio absoluto</strong>.</p>
+    <p>Ao ver o personagem ganhar forma 3D nas mãos dele, a <strong>dopamina é liberada</strong>. Ele sente orgulho. <strong>Ele criou algo.</strong></p>
+    <p class="text-xl font-bold text-green-700 bg-green-50 p-4 rounded-lg">Isso não é apenas 'recortar papel'. É Ativação Cognitiva Manual.</p>
+    <div class="pt-6">
+        <button onclick="document.getElementById('pricing-section').scrollIntoView({behavior: 'smooth'})" class="btn-primary inline-flex items-center justify-center px-8 py-3 text-lg font-bold text-white transition-all bg-green-600 rounded-full shadow-lg hover:bg-green-700 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
+            QUERO VER OS PACOTES
+        </button>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SEÇÃO: GALERIA DE RESULTADOS REAIS + MINI COMO FUNCIONA - Fundo Branco -->
+<section class="w-full py-16 md:py-24 bg-white">
+    <div class="container px-4 md:px-6">
+        
+        <!-- Headline Block -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+                Da Tela para a Realidade: O Resultado Final
+            </h2>
+            <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+                Esqueça os pixels. Veja o orgulho no rosto deles ao finalizar estes modelos.
+            </p>
+        </div>
+
+        <!-- Masonry Grid Gallery -->
+        <div class="columns-2 md:columns-4 gap-4 space-y-4 mb-16">
+            <!-- Image 1 -->
+            <div class="break-inside-avoid">
+                <picture>
+                    <source srcset="assets/img/gallery-result-1.avif" type="image/avif">
+                    <source srcset="assets/img/gallery-result-1.webp" type="image/webp">
+                    <img src="assets/img/gallery-result-1.png" alt="Resultado PaperCraft 1" loading="lazy" decoding="async" sizes="(max-width: 768px) 50vw, 25vw" class="w-full h-auto rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+                </picture>
+            </div>
+            <!-- Image 2 -->
+            <div class="break-inside-avoid">
+                <picture>
+                    <source srcset="assets/img/gallery-result-2.avif" type="image/avif">
+                    <source srcset="assets/img/gallery-result-2.webp" type="image/webp">
+                    <img src="assets/img/gallery-result-2.png" alt="Resultado PaperCraft 2" loading="lazy" decoding="async" sizes="(max-width: 768px) 50vw, 25vw" class="w-full h-auto rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+                </picture>
+            </div>
+            <!-- Image 3 -->
+            <div class="break-inside-avoid">
+                <picture>
+                    <source srcset="assets/img/gallery-result-3.avif" type="image/avif">
+                    <source srcset="assets/img/gallery-result-3.webp" type="image/webp">
+                    <img src="assets/img/gallery-result-3.png" alt="Resultado PaperCraft 3" loading="lazy" decoding="async" sizes="(max-width: 768px) 50vw, 25vw" class="w-full h-auto rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+                </picture>
+            </div>
+            <!-- Image 4 -->
+            <div class="break-inside-avoid">
+                <picture>
+                    <source srcset="assets/img/gallery-result-4.avif" type="image/avif">
+                    <source srcset="assets/img/gallery-result-4.webp" type="image/webp">
+                    <img src="assets/img/gallery-result-4.png" alt="Resultado PaperCraft 4" loading="lazy" decoding="async" sizes="(max-width: 768px) 50vw, 25vw" class="w-full h-auto rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+                </picture>
+            </div>
+            <!-- Image 5 -->
+            <div class="break-inside-avoid">
+                <picture>
+                    <source srcset="assets/img/gallery-result-5.avif" type="image/avif">
+                    <source srcset="assets/img/gallery-result-5.webp" type="image/webp">
+                    <img src="assets/img/gallery-result-5.png" alt="Resultado PaperCraft 5" loading="lazy" decoding="async" sizes="(max-width: 768px) 50vw, 25vw" class="w-full h-auto rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+                </picture>
+            </div>
+            <!-- Image 6 -->
+            <div class="break-inside-avoid">
+                <picture>
+                    <source srcset="assets/img/gallery-result-6.avif" type="image/avif">
+                    <source srcset="assets/img/gallery-result-6.webp" type="image/webp">
+                    <img src="assets/img/gallery-result-6.png" alt="Resultado PaperCraft 6" loading="lazy" decoding="async" sizes="(max-width: 768px) 50vw, 25vw" class="w-full h-auto rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+                </picture>
+            </div>
+            <!-- Image 7 -->
+            <div class="break-inside-avoid">
+                <picture>
+                    <source srcset="assets/img/gallery-result-7.avif" type="image/avif">
+                    <source srcset="assets/img/gallery-result-7.webp" type="image/webp">
+                    <img src="assets/img/gallery-result-7.png" alt="Resultado PaperCraft 7" loading="lazy" decoding="async" sizes="(max-width: 768px) 50vw, 25vw" class="w-full h-auto rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+                </picture>
+            </div>
+            <!-- Image 8 -->
+            <div class="break-inside-avoid">
+                <picture>
+                    <source srcset="assets/img/gallery-result-8.avif" type="image/avif">
+                    <source srcset="assets/img/gallery-result-8.webp" type="image/webp">
+                    <img src="assets/img/gallery-result-8.png" alt="Resultado PaperCraft 8" loading="lazy" decoding="async" sizes="(max-width: 768px) 50vw, 25vw" class="w-full h-auto rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+                </picture>
+            </div>
+            <!-- Image 9 -->
+            <div class="break-inside-avoid">
+                <picture>
+                    <source srcset="assets/img/gallery-result-9.avif" type="image/avif">
+                    <source srcset="assets/img/gallery-result-9.webp" type="image/webp">
+                    <img src="assets/img/gallery-result-9.png" alt="Resultado PaperCraft 9" loading="lazy" decoding="async" sizes="(max-width: 768px) 50vw, 25vw" class="w-full h-auto rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+                </picture>
+            </div>
+            <!-- Image 10 -->
+            <div class="break-inside-avoid">
+                <picture>
+                    <source srcset="assets/img/gallery-result-10.avif" type="image/avif">
+                    <source srcset="assets/img/gallery-result-10.webp" type="image/webp">
+                    <img src="assets/img/gallery-result-10.png" alt="Resultado PaperCraft 10" loading="lazy" decoding="async" sizes="(max-width: 768px) 50vw, 25vw" class="w-full h-auto rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+                </picture>
+            </div>
+            <!-- Image 11 -->
+            <div class="break-inside-avoid">
+                <picture>
+                    <source srcset="assets/img/gallery-result-11.avif" type="image/avif">
+                    <source srcset="assets/img/gallery-result-11.webp" type="image/webp">
+                    <img src="assets/img/gallery-result-11.png" alt="Resultado PaperCraft 11" loading="lazy" decoding="async" sizes="(max-width: 768px) 50vw, 25vw" class="w-full h-auto rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
+                </picture>
+            </div>
+        </div>
+
+        <!-- Transition Strip -->
+        <div class="text-center mb-8">
+            <p class="text-xl md:text-2xl font-semibold text-green-600">
+                E a melhor parte? Você recebe tudo isso em 2 minutos.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- SEÇÃO 3.5: COMO FUNCIONA (Process Strip + Galeria de PDF) - Fundo Cinza Claro -->
+<section class="w-full py-12 bg-gray-100">
+    <div class="container px-4 md:px-6">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-gray-900 mb-2">É Simples Assim: Do Seu E-mail para a Mesa em 2 Minutos</h2>
+        </div>
+        
+        <!-- Passo a Passo -->
+        <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 text-center mb-16">
+            <!-- Passo 1 -->
+            <div class="flex flex-col items-center gap-4 max-w-xs">
+                <div class="bg-white p-4 rounded-full shadow-sm text-green-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </div>
+                <div>
+                    <span class="block text-xl font-bold text-gray-900 mb-1">1. Receba no E-mail</span>
+                    <p class="text-gray-700">Acesso imediato enviado automaticamente após a compra.</p>
+                </div>
+            </div>
+            <!-- Seta (apenas desktop) -->
+            <div class="hidden md:block text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </div>
+            <!-- Passo 2 -->
+            <div class="flex flex-col items-center gap-4 max-w-xs">
+                <div class="bg-white p-4 rounded-full shadow-sm text-green-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                </div>
+                <div>
+                    <span class="block text-xl font-bold text-gray-900 mb-1">2. Baixe os Arquivos</span>
+                    <p class="text-gray-700">Abra no celular, tablet ou computador. Arquivos PDF leves e organizados.</p>
+                </div>
+            </div>
+            <!-- Seta (apenas desktop) -->
+            <div class="hidden md:block text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </div>
+            <!-- Passo 3 -->
+            <div class="flex flex-col items-center gap-4 max-w-xs">
+                <div class="bg-white p-4 rounded-full shadow-sm text-green-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-printer"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6"/><rect x="6" y="14" width="12" height="8"/><path d="M22 17h-2"/><path d="M4 17h-2"/></svg>
+                </div>
+                <div>
+                    <span class="block text-xl font-bold text-gray-900 mb-1">3. Imprima e Monte</span>
+                    <p class="text-gray-700">Use qualquer impressora comum e papel sulfite A4.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Galeria Visual (PDF Preview) -->
+        <div class="mt-16">
+            <h3 class="text-2xl font-medium text-center text-gray-800 mb-8">Dê uma espiada no que você vai imprimir:</h3>
+            
+            <!-- Horizontal Scroll Container -->
+            <div class="flex overflow-x-auto gap-6 py-6 px-4 snap-x scrollbar-hide -mx-4 md:mx-0">
+                <!-- PDF Image 1 -->
+                <div class="flex-none w-64 md:w-80 snap-center shadow-lg rounded-lg overflow-hidden border border-gray-200 bg-white">
+                    <picture>
+                        <source srcset="assets/img/pdf-preview-1.avif" type="image/avif">
+                        <source srcset="assets/img/pdf-preview-1.webp" type="image/webp">
+                        <img src="assets/img/pdf-preview-1.png" alt="Exemplo PDF 1" loading="lazy" decoding="async" sizes="(max-width: 768px) 256px, 320px" class="w-full h-auto object-cover">
+                    </picture>
+                </div>
+                <!-- PDF Image 2 -->
+                <div class="flex-none w-64 md:w-80 snap-center shadow-lg rounded-lg overflow-hidden border border-gray-200 bg-white">
+                    <picture>
+                        <source srcset="assets/img/pdf-preview-2.avif" type="image/avif">
+                        <source srcset="assets/img/pdf-preview-2.webp" type="image/webp">
+                        <img src="assets/img/pdf-preview-2.png" alt="Exemplo PDF 2" loading="lazy" decoding="async" sizes="(max-width: 768px) 256px, 320px" class="w-full h-auto object-cover">
+                    </picture>
+                </div>
+                <!-- PDF Image 3 -->
+                <div class="flex-none w-64 md:w-80 snap-center shadow-lg rounded-lg overflow-hidden border border-gray-200 bg-white">
+                    <picture>
+                        <source srcset="assets/img/pdf-preview-3.avif" type="image/avif">
+                        <source srcset="assets/img/pdf-preview-3.webp" type="image/webp">
+                        <img src="assets/img/pdf-preview-3.png" alt="Exemplo PDF 3" loading="lazy" decoding="async" sizes="(max-width: 768px) 256px, 320px" class="w-full h-auto object-cover">
+                    </picture>
+                </div>
+                <!-- PDF Image 4 -->
+                <div class="flex-none w-64 md:w-80 snap-center shadow-lg rounded-lg overflow-hidden border border-gray-200 bg-white">
+                    <picture>
+                        <source srcset="assets/img/pdf-preview-4.avif" type="image/avif">
+                        <source srcset="assets/img/pdf-preview-4.webp" type="image/webp">
+                        <img src="assets/img/pdf-preview-4.png" alt="Exemplo PDF 4" loading="lazy" decoding="async" sizes="(max-width: 768px) 256px, 320px" class="w-full h-auto object-cover">
+                    </picture>
+                </div>
+                <!-- PDF Image 5 -->
+                <div class="flex-none w-64 md:w-80 snap-center shadow-lg rounded-lg overflow-hidden border border-gray-200 bg-white">
+                    <picture>
+                        <source srcset="assets/img/pdf-preview-5.avif" type="image/avif">
+                        <source srcset="assets/img/pdf-preview-5.webp" type="image/webp">
+                        <img src="assets/img/pdf-preview-5.png" alt="Exemplo PDF 5" loading="lazy" decoding="async" sizes="(max-width: 768px) 256px, 320px" class="w-full h-auto object-cover">
+                    </picture>
+                </div>
+                <!-- PDF Image 6 -->
+                <div class="flex-none w-64 md:w-80 snap-center shadow-lg rounded-lg overflow-hidden border border-gray-200 bg-white">
+                    <picture>
+                        <source srcset="assets/img/pdf-preview-6.avif" type="image/avif">
+                        <source srcset="assets/img/pdf-preview-6.webp" type="image/webp">
+                        <img src="assets/img/pdf-preview-6.png" alt="Exemplo PDF 6" loading="lazy" decoding="async" sizes="(max-width: 768px) 256px, 320px" class="w-full h-auto object-cover">
+                    </picture>
+                </div>
+                 <!-- PDF Image 7 -->
+                <div class="flex-none w-64 md:w-80 snap-center shadow-lg rounded-lg overflow-hidden border border-gray-200 bg-white">
+                    <picture>
+                        <source srcset="assets/img/pdf-preview-7.avif" type="image/avif">
+                        <source srcset="assets/img/pdf-preview-7.webp" type="image/webp">
+                        <img src="assets/img/pdf-preview-7.png" alt="Exemplo PDF 7" loading="lazy" decoding="async" sizes="(max-width: 768px) 256px, 320px" class="w-full h-auto object-cover">
+                    </picture>
+                </div>
+                 <!-- PDF Image 8 -->
+                <div class="flex-none w-64 md:w-80 snap-center shadow-lg rounded-lg overflow-hidden border border-gray-200 bg-white">
+                    <picture>
+                        <source srcset="assets/img/pdf-preview-8.avif" type="image/avif">
+                        <source srcset="assets/img/pdf-preview-8.webp" type="image/webp">
+                        <img src="assets/img/pdf-preview-8.png" alt="Exemplo PDF 8" loading="lazy" decoding="async" sizes="(max-width: 768px) 256px, 320px" class="w-full h-auto object-cover">
+                    </picture>
+                </div>
+                 <!-- PDF Image 9 -->
+                <div class="flex-none w-64 md:w-80 snap-center shadow-lg rounded-lg overflow-hidden border border-gray-200 bg-white">
+                    <picture>
+                        <source srcset="assets/img/pdf-preview-9.avif" type="image/avif">
+                        <source srcset="assets/img/pdf-preview-9.webp" type="image/webp">
+                        <img src="assets/img/pdf-preview-9.png" alt="Exemplo PDF 9" loading="lazy" decoding="async" sizes="(max-width: 768px) 256px, 320px" class="w-full h-auto object-cover">
+                    </picture>
+                </div>
+                 <!-- PDF Image 10 -->
+                <div class="flex-none w-64 md:w-80 snap-center shadow-lg rounded-lg overflow-hidden border border-gray-200 bg-white">
+                    <picture>
+                        <source srcset="assets/img/pdf-preview-10.avif" type="image/avif">
+                        <source srcset="assets/img/pdf-preview-10.webp" type="image/webp">
+                        <img src="assets/img/pdf-preview-10.png" alt="Exemplo PDF 10" loading="lazy" decoding="async" sizes="(max-width: 768px) 256px, 320px" class="w-full h-auto object-cover">
+                    </picture>
+                </div>
+            </div>
+            <p class="text-center text-sm text-gray-500 mt-4 flex items-center justify-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mouse-pointer-click"><path d="m9 9 5 12 1.8-5.2L21 14Z"/><path d="M7.2 2.2 8 5.1"/><path d="m5.1 8-2.9-.8"/><path d="M14 4.1 12 6"/><path d="m6 12-1.9 2"/></svg>
+                Arraste para o lado para ver mais
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- SEÇÃO 4: A OFERTA (O Que Eles Recebem) - Fundo Branco -->
+<section class="w-full py-16 md:py-24 bg-white">
+    <div class="container px-4 md:px-6">
+        <div class="flex flex-col items-center justify-center space-y-4 text-center mb-16">
+            <h2 class="text-3xl font-extrabold tracking-tighter sm:text-5xl text-gray-900">
+                Apresentando: O Megapack PaperCraft Kids <span class="text-blue-600">(Edição Premium)</span>
+            </h2>
+            <p class="text-xl text-gray-600">Tudo o que você precisa para garantir semanas de diversão</p>
+        </div>
+        <div class="mx-auto max-w-5xl grid gap-8 md:grid-cols-2 lg:gap-12">
+            <!-- 300 PaperToys -->
+            <div class="flex items-start gap-4 p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                <div class="bg-blue-100 text-blue-600 p-4 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">✅ 300 PaperToys Infantis</h3>
+                    <p class="text-gray-600 mt-2">Heróis e personagens que eles já amam (para gerar interesse imediato).</p>
+                </div>
+            </div>
+            <!-- 120 Veículos -->
+            <div class="flex items-start gap-4 p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                <div class="bg-blue-100 text-blue-600 p-4 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-car-front"><path d="m21 8-2 2-1.5-3.7A2 2 0 0 0 15.646 5H8.4a2 2 0 0 0-1.903 1.257L5 10 3 8"/><path d="M7 14h.01"/><path d="M17 14h.01"/><rect width="18" height="8" x="3" y="10" rx="2"/><path d="M5 18v2"/><path d="M19 18v2"/></svg>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">✅ 120 Veículos 3D</h3>
+                    <p class="text-gray-600 mt-2">Carros, aviões e caminhões para montar e brincar no chão.</p>
+                </div>
+            </div>
+            <!-- 150 Cenários -->
+            <div class="flex items-start gap-4 p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                <div class="bg-blue-100 text-blue-600 p-4 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-castle"><path d="M22 20v-9H2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2Z"/><path d="M18 11V4H6v7"/><path d="M15 22v-4a3 3 0 0 0-3-3a3 3 0 0 0-3 3v4"/><path d="M22 11V9"/><path d="M2 11V9"/><path d="M6 4V2"/><path d="M18 4V2"/><path d="M10 4V2"/><path d="M14 4V2"/></svg>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">✅ 150 Cenários e Mini-Mundos</h3>
+                    <p class="text-gray-600 mt-2">Para eles criarem histórias, não apenas bonecos.</p>
+                </div>
+            </div>
+            <!-- 100 Moldes Educativos -->
+            <div class="flex items-start gap-4 p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                <div class="bg-blue-100 text-blue-600 p-4 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-puzzle"><path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z"/></svg>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">✅ 100 Moldes Educativos</h3>
+                    <p class="text-gray-600 mt-2">Aprender brincando sem parecer "tarefa de escola".</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SEÇÃO 5: O STACK (Empilhamento de Valor) - Fundo Verde Pálido -->
+<section class="w-full py-16 md:py-24 bg-green-50">
+    <div class="container px-4 md:px-6">
+        <div class="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+            <h2 class="text-3xl font-extrabold tracking-tighter sm:text-4xl text-gray-900">
+                Levando o Pacote Premium <span class="text-green-600 underline">HOJE</span>, você ganha estes presentes de graça:
+            </h2>
+        </div>
+        
+        <!-- Value List Container -->
+        <div class="max-w-4xl mx-auto border-4 border-dashed border-green-300 bg-[#F0FDF4] rounded-2xl p-6 md:p-10 shadow-sm">
+            
+            <div class="space-y-8">
+                <!-- Bonus 1 -->
+                <div class="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+                    <div class="flex-shrink-0">
+                        <!-- Icon Brain -->
+                        <div class="bg-white p-4 rounded-full shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain text-green-600"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/></svg>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-900">BÔNUS #1: 100 Atividades Psicomotoras</h3>
+                        <p class="text-gray-600 mt-1 text-lg">Perfeito para desenvolver a escrita e a coordenação fina.</p>
+                    </div>
+                    <div class="min-w-[200px] md:text-right">
+                        <p class="text-sm text-gray-500 font-medium mb-1">Vendido separadamente por: <span class="line-through text-red-500">R$ 20,00</span></p>
+                        <p class="text-xl font-black text-green-600 uppercase">GRÁTIS HOJE</p>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <hr class="border-green-200">
+
+                <!-- Bonus 2 -->
+                <div class="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+                    <div class="flex-shrink-0">
+                        <!-- Icon Palette -->
+                        <div class="bg-white p-4 rounded-full shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette text-purple-600"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.093 0-.679.575-1.25 1.25-1.25h1.969C18.422 16.844 22 13.266 22 7.719 22 4.555 17.523 2 12 2z"/></svg>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-900">BÔNUS #2: 50 Desenhos Bobbie Goods</h3>
+                        <p class="text-gray-600 mt-1 text-lg">A tendência do momento para colorir e relaxar.</p>
+                    </div>
+                    <div class="min-w-[200px] md:text-right">
+                        <p class="text-sm text-gray-500 font-medium mb-1">Vendido separadamente por: <span class="line-through text-red-500">R$ 15,00</span></p>
+                        <p class="text-xl font-black text-green-600 uppercase">GRÁTIS HOJE</p>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <hr class="border-green-200">
+
+                <!-- Bonus 3 -->
+                <div class="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+                    <div class="flex-shrink-0">
+                        <!-- Icon Zap -->
+                        <div class="bg-white p-4 rounded-full shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap text-orange-500"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-900">BÔNUS #3: 12 Meses de Atualizações</h3>
+                        <p class="text-gray-600 mt-1 text-lg">Novos moldes adicionados à plataforma sem custo extra.</p>
+                    </div>
+                    <div class="min-w-[200px] md:text-right">
+                        <p class="text-sm text-gray-500 font-medium mb-1">Custo anual: <span class="line-through text-red-500">R$ 15,00</span></p>
+                        <p class="text-xl font-black text-green-600 uppercase">GRÁTIS HOJE</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary -->
+            <div class="text-center mt-10 pt-8 border-t-2 border-dashed border-green-200">
+                <p class="text-lg md:text-xl text-gray-600 mb-2 font-medium">
+                    Pack Principal (R$ 47) + Bônus (R$ 50) = <span class="font-black text-gray-900">VALOR TOTAL: <span class="line-through text-red-500 decoration-2">R$ 97,00</span></span>
+                </p>
+                <p class="text-2xl md:text-3xl font-black text-green-700 uppercase tracking-tight mt-4">
+                    Hoje você leva tudo por apenas <span class="bg-green-600 text-white px-4 py-2 rounded-lg shadow-lg transform -rotate-1 inline-block">R$ 24,90</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SEÇÃO 6: A ESCOLHA (Pricing Table com Decoy) - Fundo Destaque -->
+<section id="pricing-section" class="w-full py-10 md:py-24 bg-gradient-to-b from-gray-100 to-gray-200">
+    <div class="container px-4 md:px-6">
+        <h2 class="text-center text-2xl md:text-3xl font-extrabold mb-8 md:mb-12 text-gray-900">Escolha o Melhor para seu Filho</h2>
+        <!-- Grid layout corrected: side-by-side on desktop, stacked on mobile with Premium on top visually using order -->
+        <div class="grid gap-6 md:gap-8 lg:grid-cols-2 lg:gap-12 max-w-5xl mx-auto items-end">
+            
+            <!-- PACOTE PREMIUM (Hero) - Order 1 on mobile to appear first, Order 2 on desktop -->
+            <div class="w-full relative flex flex-col p-8 bg-white rounded-3xl border-4 border-green-600 shadow-2xl transform scale-100 lg:scale-110 z-10 order-1 lg:order-2 mb-8 lg:mb-0">
+                <div class="absolute -top-6 left-0 right-0 mx-auto w-fit px-6 py-2 bg-gradient-to-r from-green-500 to-green-600 text-white font-black rounded-full shadow-lg text-sm uppercase tracking-wide flex items-center gap-2">
+                    🔥 MAIS VENDIDO
+                </div>
+                <div class="text-center mb-6 mt-4">
+                    <h3 class="text-3xl font-black text-gray-900">PACOTE PREMIUM</h3>
+                    <p class="text-sm text-green-600 font-bold uppercase tracking-wider">(Completo + Bônus)</p>
+                </div>
+                <div class="space-y-2 mb-8 text-center bg-green-50 p-4 rounded-xl border border-green-100">
+                    <p class="text-gray-500 line-through font-medium text-lg">De: R$ 97,00</p>
+                    <p class="text-6xl font-black text-green-600 tracking-tighter"><span class="text-3xl font-bold text-green-500 align-middle mr-2">Por:</span>R$ 24,90</p>
+                    <p class="text-xs text-green-800 font-medium">Pagamento Único • Acesso Vitalício</p>
+                </div>
+                <ul class="space-y-4 mb-8 text-base text-gray-700">
+                    <li class="flex items-center gap-3 font-bold text-lg"><div class="bg-green-100 p-1 rounded-full"><svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></div>+1.200 Moldes</li>
+                    
+                    <li class="flex items-center gap-3"><div class="bg-green-50 p-1.5 rounded-full"><svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></svg></div> 12 Meses de Atualizações Mensais</li>
+                    
+                    <li class="flex items-center gap-3"><div class="bg-green-50 p-1.5 rounded-full"><svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M19.439 10c.011.017.022.033.033.05H22v-2h-2.529a1.5 1.5 0 0 0-2.942 0H14v2.529a1.5 1.5 0 0 0 0 2.942V22h2v-2.529a1.5 1.5 0 0 0 2.942 0H22v-2h-2.561c-.011.016-.022.033-.033.05a1.5 1.5 0 0 0 0-2.942Z"/><path d="M4.561 14c-.011-.017-.022-.033-.033-.05H2v2h2.529a1.5 1.5 0 0 0 2.942 0H10v-2.529a1.5 1.5 0 0 0 0-2.942V2h-2v2.529a1.5 1.5 0 0 0-2.942 0H2v2h2.561c.011-.016.022-.033.033-.05a1.5 1.5 0 0 0 0 2.942Z"/></svg></div> 100 Moldes de Quebra-Cabeça</li>
+                    
+                    <li class="flex items-center gap-3"><div class="bg-green-50 p-1.5 rounded-full"><svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div> 100 Atividades Psicomotoras</li>
+                    
+                    <li class="flex items-center gap-3"><div class="bg-green-50 p-1.5 rounded-full"><svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.093 0-.679.575-1.25 1.25-1.25h1.969C18.422 16.844 22 13.266 22 7.719 22 4.555 17.523 2 12 2z"/></svg></div> 50 Bobbie Goods para Colorir</li>
+                    
+                    <li class="flex items-center gap-3 font-bold"><div class="bg-green-100 p-1 rounded-full"><svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div> Suporte Prioritário via WhatsApp</li>
+                    
+                    <li class="flex items-center gap-3 font-bold"><div class="bg-green-100 p-1 rounded-full"><svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 1 0 0-8c-2 0-4 1.33-6 4Z"/></svg></div> Acesso Vitalício a Todo Conteúdo</li>
+                </ul>
+                <div class="text-center mb-4">
+                    <p class="text-sm font-bold text-red-600 mb-1 uppercase tracking-wide">Tempo restante para o fim da oferta:</p>
+                    <div id="countdown-timer" class="text-4xl font-black text-red-600 tracking-widest tabular-nums font-mono">
+                        --:--:--
+                    </div>
+                </div>
+                <a href="#" class="block w-full text-center py-5 rounded-xl bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-black text-2xl shadow-xl hover:shadow-2xl animate-pulse transition-all transform hover:-translate-y-1">
+                    QUERO O PACOTE PREMIUM
+                </a>
+                <p class="text-center text-xs text-gray-400 mt-4 flex items-center justify-center gap-1">
+                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                    Ambiente 100% Seguro
+                </p>
+            </div>
+
+            <!-- PACOTE BÁSICO (Decoy) - Order 2 on mobile to appear second, Order 1 on desktop -->
+            <div class="w-full flex flex-col p-6 bg-white rounded-2xl border border-gray-300 shadow-sm opacity-80 hover:opacity-100 transition-opacity transform scale-95 order-2 lg:order-1">
+                <div class="text-center mb-6">
+                    <h3 class="text-2xl font-bold text-gray-500">PACOTE BÁSICO</h3>
+                </div>
+                <div class="space-y-4 mb-8">
+                    <p class="text-center"><span class="font-bold text-4xl text-gray-700">R$ 14,70</span></p>
+                </div>
+                <ul class="space-y-4 mb-8 text-sm text-gray-600">
+                    <li class="flex items-center gap-3"><span class="text-green-500"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></span> +1.200 Moldes</li>
+                    <li class="flex items-center gap-3"><span class="text-green-500"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></span> Acesso Imediato</li>
+                    <li class="flex items-center gap-3"><span class="text-green-500"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></span> Garantia de 7 Dias</li>
+                    
+                    <li class="flex items-center gap-3 text-gray-400"><span class="text-red-400"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span> SEM as Atualizações Mensais</li>
+                    <li class="flex items-center gap-3 text-gray-400"><span class="text-red-400"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span> SEM os Kits de Bônus (Jogos/Colorir)</li>
+                    <li class="flex items-center gap-3 text-gray-400"><span class="text-red-400"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span> SEM Suporte no WhatsApp</li>
+                </ul>
+                <button class="btn-basic w-full py-3 rounded-lg border-2 border-gray-300 bg-transparent text-gray-500 font-bold hover:bg-gray-100 transition-colors">
+                    Quero apenas o Básico
+                </button>
+            </div>
+
+        </div>
+        
+        <!-- DEPOIMENTOS (Prova Social) - Full Background Photo Style -->
+        <div class="mt-20 max-w-6xl mx-auto">
+            <h3 class="text-2xl md:text-3xl font-black text-center mb-8 text-gray-900 uppercase tracking-tight">O que os pais estão dizendo:</h3>
+            
+            <!-- Mobile: Horizontal Scroll | Desktop: Grid -->
+            <div class="flex md:grid md:grid-cols-3 lg:grid-cols-4 gap-4 overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-6 px-4 md:px-0">
+                
+                <!-- Card 1: Prof.ª Clara -->
+                <div class="relative min-w-[280px] w-full md:w-auto aspect-[3/4] rounded-2xl shadow-lg hover:shadow-xl transition-all overflow-hidden snap-center flex-shrink-0 group">
+                    <picture>
+                        <source srcset="assets/img/testimonial-prof-clara.avif" type="image/avif">
+                        <source srcset="assets/img/testimonial-prof-clara.webp" type="image/webp">
+                        <img src="assets/img/testimonial-prof-clara.jpg" alt="Prof.ª Clara" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    </picture>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 w-full p-6 z-10">
+                        <div class="flex gap-1 text-yellow-400 mb-2">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                        <p class="text-white font-medium text-shadow-sm leading-snug mb-3">"Perfeito para usar na escola e manter a turma ocupada! As crianças se divertem e aprendem."</p>
+                        <p class="text-green-400 font-bold text-lg">Prof.ª Clara</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Mariana S. -->
+                <div class="relative min-w-[280px] w-full md:w-auto aspect-[3/4] rounded-2xl shadow-lg hover:shadow-xl transition-all overflow-hidden snap-center flex-shrink-0 group">
+                    <picture>
+                        <source srcset="assets/img/testimonial-mariana-s.avif" type="image/avif">
+                        <source srcset="assets/img/testimonial-mariana-s.webp" type="image/webp">
+                        <img src="assets/img/testimonial-mariana-s.jpg" alt="Mariana S." class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    </picture>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 w-full p-6 z-10">
+                        <div class="flex gap-1 text-yellow-400 mb-2">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                        <p class="text-white font-medium text-shadow-sm leading-snug mb-3">"As crianças ficam super entretidas e longe das telas. Recomendo muito! É um investimento na criatividade."</p>
+                        <p class="text-green-400 font-bold text-lg">Mariana S.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Roberto Jr. -->
+                <div class="relative min-w-[280px] w-full md:w-auto aspect-[3/4] rounded-2xl shadow-lg hover:shadow-xl transition-all overflow-hidden snap-center flex-shrink-0 group">
+                    <img src="assets/img/testimonial-roberto-jr.jpg" alt="Roberto Jr." class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 w-full p-6 z-10">
+                        <div class="flex gap-1 text-yellow-400 mb-2">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                        <p class="text-white font-medium text-shadow-sm leading-snug mb-3">"Eu sou péssimo com trabalhos manuais e achei que não ia conseguir. Mas os moldes vêm com linhas pontilhadas super fáceis. Até eu consegui montar um dinossauro pro meu filho. A cara de felicidade dele não tem preço."</p>
+                        <p class="text-green-400 font-bold text-lg">Roberto Jr.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4: Júlia M. -->
+                <div class="relative min-w-[280px] w-full md:w-auto aspect-[3/4] rounded-2xl shadow-lg hover:shadow-xl transition-all overflow-hidden snap-center flex-shrink-0 group">
+                    <picture>
+                        <source srcset="assets/img/testimonial-julia-m.avif" type="image/avif">
+                        <source srcset="assets/img/testimonial-julia-m.webp" type="image/webp">
+                        <img src="assets/img/testimonial-julia-m.jpg" alt="Júlia M." class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    </picture>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 w-full p-6 z-10">
+                        <div class="flex gap-1 text-yellow-400 mb-2">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                        <p class="text-white font-medium text-shadow-sm leading-snug mb-3">"Meu filho não para quieto um segundo, achei que ele ia largar em 5 minutos. Resultado: ele passou a tarde inteira de sábado montando a cidadezinha. Finalmente consegui tomar meu café em paz!"</p>
+                        <p class="text-green-400 font-bold text-lg">Júlia M.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SEÇÃO 7: GARANTIA E FECHAMENTO - Fundo Branco -->
+<section class="w-full py-16 md:py-24 bg-white">
+    <div class="container px-4 md:px-6">
+        <!-- Garantia -->
+        <div class="max-w-4xl mx-auto mb-16 bg-white p-8 rounded-2xl border border-gray-200 shadow-sm">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="flex-shrink-0">
+                    <div class="bg-green-100 p-4 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check text-green-600"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+                    </div>
+                </div>
+                <div class="text-center md:text-left">
+                    <h2 class="text-2xl font-extrabold mb-2 text-gray-900">7 Dias de Diversão ou Seu Dinheiro de Volta</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Se você imprimir, montar e seu filho não gostar, eu devolvo cada centavo. Você fica com os arquivos de graça como pedido de desculpas.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Perguntas Frequentes</h2>
+            <div class="space-y-4">
+                <details class="group border border-gray-200 rounded-xl p-6 bg-white shadow-sm open:bg-gray-50 transition-colors">
+                    <summary class="flex justify-between items-center font-bold text-lg cursor-pointer list-none text-gray-800">
+                        <span>Como recebo os moldes?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 group-open:animate-fadeIn leading-relaxed">
+                        O acesso chega imediatamente no seu e-mail após a confirmação do pagamento.
+                    </p>
+                </details>
+
+                <details class="group border border-gray-200 rounded-xl p-6 bg-white shadow-sm open:bg-gray-50 transition-colors">
+                    <summary class="flex justify-between items-center font-bold text-lg cursor-pointer list-none text-gray-800">
+                        <span>O acesso é vitalício?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 group-open:animate-fadeIn leading-relaxed">
+                        Sim! Você paga uma única vez e tem acesso para sempre a todo o material e atualizações.
+                    </p>
+                </details>
+
+                <details class="group border border-gray-200 rounded-xl p-6 bg-white shadow-sm open:bg-gray-50 transition-colors">
+                    <summary class="flex justify-between items-center font-bold text-lg cursor-pointer list-none text-gray-800">
+                        <span>Preciso de papel especial?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 group-open:animate-fadeIn leading-relaxed">
+                        Não! Papel sulfite comum funciona, mas papel 180g fica melhor. A escolha é sua.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/security.js" defer></script>
+</body>
+</html>
