@@ -2,10 +2,9 @@
   "name": "minimakers",
   "version": "1.0.0",
   "scripts": {
-    "build": "npx @tailwindcss/cli@next -i ./assets/css/input.css -o ./assets/css/styles.min.css --minify"
+    "build": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/styles.min.css --minify"
   },
   "devDependencies": {
-    "@tailwindcss/cli": "next",
-    "tailwindcss": "next"
+    "tailwindcss": "^3.4.17"
   }
 }
