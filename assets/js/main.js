@@ -14,6 +14,7 @@
     document.addEventListener('DOMContentLoaded', () => {
         initDynamicDate();
         initCountdown();
+        initExitIntentModal();
     });
 
     /**
@@ -70,6 +71,37 @@
         // Run immediately then schedule
         updateTimer();
         setInterval(updateTimer, 1000);
+    }
+
+    function initExitIntentModal() {
+        const premiumDiscountLink = 'https://pay.cakto.com.br/sgebuwo_702170';
+        const basicLink = 'https://pay.cakto.com.br/ey5e5so_702220';
+        const trigger = document.getElementById('basic-link');
+        const modal = document.getElementById('exit-intent-modal');
+        if (!trigger || !modal) return;
+        const overlay = document.getElementById('exit-intent-overlay');
+        const closeBtn = document.getElementById('exit-intent-close');
+        const premiumBtn = document.getElementById('modal-premium-button');
+        const basicBtn = document.getElementById('modal-basic-link');
+        premiumBtn.setAttribute('href', premiumDiscountLink);
+        basicBtn.setAttribute('href', basicLink);
+        function open() {
+            modal.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+        }
+        function close() {
+            modal.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
+        }
+        trigger.addEventListener('click', (e) => {
+            e.preventDefault();
+            open();
+        });
+        overlay.addEventListener('click', close);
+        closeBtn.addEventListener('click', close);
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') close();
+        });
     }
 
 })();

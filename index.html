@@ -606,7 +606,7 @@
                     <li class="flex items-center gap-3 text-gray-400"><span class="text-red-400"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span> SEM os Kits de Bônus (Jogos/Colorir)</li>
                     <li class="flex items-center gap-3 text-gray-400"><span class="text-red-400"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span> SEM Suporte no WhatsApp</li>
                 </ul>
-                <a href="https://pay.cakto.com.br/ey5e5so_702220" class="btn-basic block w-full text-center py-3 rounded-lg border-2 border-gray-300 bg-transparent text-gray-500 font-bold hover:bg-gray-100 transition-colors">
+                <a id="basic-link" href="https://pay.cakto.com.br/ey5e5so_702220" class="btn-basic block w-full text-center py-3 rounded-lg border-2 border-gray-300 bg-transparent text-gray-500 font-bold hover:bg-gray-100 transition-colors">
                     Quero apenas o Básico
                 </a>
             </div>
@@ -769,6 +769,26 @@
     </div>
 </section>
 
+</div>
+<div id="exit-intent-modal" class="fixed inset-0 z-50 hidden">
+    <div id="exit-intent-overlay" class="absolute inset-0 bg-black/70"></div>
+    <div class="relative max-w-lg mx-auto mt-24 bg-white rounded-2xl shadow-2xl p-8 text-center">
+        <h3 class="text-2xl font-black text-red-600">🛑 ESPERE! NÃO PERCA OS BÔNUS...</h3>
+        <p class="mt-4 text-gray-700 whitespace-pre-line">Você está escolhendo a versão incompleta para economizar alguns trocados.
+
+Vamos fazer um trato? 
+Leve o PACOTE PREMIUM COMPLETO (com todos os 1.200 moldes + Kits de Bônus) agora mesmo com um desconto especial.</p>
+        <div class="mt-6">
+            <div class="text-sm text-gray-500 line-through">De R$ 24,90</div>
+            <div class="text-3xl font-black text-green-600">Por R$ 19,90</div>
+            <div class="text-xs text-gray-400 mt-1">(Oferta única, válida apenas nesta tela)</div>
+        </div>
+        <div class="mt-8 space-y-4">
+            <a id="modal-premium-button" href="#" class="block w-full py-4 rounded-xl bg-[#22C55E] hover:bg-green-600 text-white font-black text-lg shadow-lg animate-pulse">✅ SIM! QUERO O PREMIUM POR R$ 19,90</a>
+            <a id="modal-basic-link" href="#" class="block text-sm text-gray-500 underline">Não, obrigado. Quero a versão básica e incompleta por R$ 14,70.</a>
+        </div>
+        <button id="exit-intent-close" class="absolute top-3 right-3 p-2 rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200">✕</button>
+    </div>
 </div>
 <script src="assets/js/main.js" defer></script>
 <script src="assets/js/security.js" defer></script>
