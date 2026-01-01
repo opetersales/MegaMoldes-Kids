@@ -74,7 +74,7 @@
     }
 
     function initExitIntentModal() {
-        const premiumDiscountLink = 'https://pay.cakto.com.br/sgebuwo_702170';
+        const premiumDiscountLink = 'https://pay.cakto.com.br/3bpvym4_706426';
         const basicLink = 'https://pay.cakto.com.br/ey5e5so_702220';
         const trigger = document.getElementById('basic-link');
         const modal = document.getElementById('exit-intent-modal');
