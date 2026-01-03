@@ -15,6 +15,7 @@
         initDynamicDate();
         initCountdown();
         initExitIntentModal();
+        initMiniVariant();
     });
 
     /**
@@ -102,6 +103,21 @@
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') close();
         });
+    }
+
+    function initMiniVariant() {
+        const params = new URLSearchParams(window.location.search);
+        const isMini = params.get('v') === 'mini' || params.get('mini') === '1';
+        const mini = document.getElementById('mini-landing');
+        const legacy = document.getElementById('legacy-root');
+        if (!isMini || !mini || !legacy) return;
+        mini.classList.remove('hidden');
+        legacy.classList.add('hidden');
+        const premiumDiscountLink = 'https://pay.cakto.com.br/3bpvym4_706426';
+        const miniCta = document.getElementById('mini-cta');
+        const miniCtaFinal = document.getElementById('mini-cta-final');
+        if (miniCta) miniCta.setAttribute('href', premiumDiscountLink);
+        if (miniCtaFinal) miniCtaFinal.setAttribute('href', premiumDiscountLink);
     }
 
 })();
