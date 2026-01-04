@@ -120,6 +120,7 @@
         if (miniCtaFinal) miniCtaFinal.setAttribute('href', premiumDiscountLink);
         const video = document.getElementById('mini-vsl');
         const audioBtn = document.getElementById('mini-vsl-audio');
+        const replayBtn = document.getElementById('mini-vsl-replay');
         if (video) {
             video.muted = true;
             video.play().catch(() => {});
@@ -132,6 +133,20 @@
                     video.muted = false;
                     video.play().catch(() => {});
                     audioBtn.classList.add('hidden');
+                } catch (_) {}
+            });
+        }
+        if (video && replayBtn) {
+            video.addEventListener('ended', () => {
+                replayBtn.classList.remove('hidden');
+            });
+            replayBtn.addEventListener('click', () => {
+                try {
+                    video.currentTime = 0;
+                    video.muted = false;
+                    replayBtn.classList.add('hidden');
+                    if (audioBtn) audioBtn.classList.add('hidden');
+                    video.play().catch(() => {});
                 } catch (_) {}
             });
         }
