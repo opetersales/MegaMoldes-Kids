@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<script
-  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-  data-utmify-prevent-xcod-sck
-  data-utmify-prevent-subids
-  async
-  defer
-></script>
 <script>
-  window.pixelId = "6958a99d32b644967d0a9ddf";
-  var a = document.createElement("script");
-  a.setAttribute("async", "");
-  a.setAttribute("defer", "");
-  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-  document.head.appendChild(a);
+  (function() {
+    function loadThirdParty() {
+      if (window.__thirdPartyLoaded) return;
+      window.__thirdPartyLoaded = true;
+      var utm = document.createElement('script');
+      utm.src = "https://cdn.utmify.com.br/scripts/utms/latest.js";
+      utm.defer = true; utm.async = true;
+      utm.setAttribute('data-utmify-prevent-xcod-sck','');
+      utm.setAttribute('data-utmify-prevent-subids','');
+      document.head.appendChild(utm);
+      window.pixelId = "6958a99d32b644967d0a9ddf";
+      var px = document.createElement("script");
+      px.src = "https://cdn.utmify.com.br/scripts/pixel/pixel.js";
+      px.defer = true; px.async = true;
+      document.head.appendChild(px);
+    }
+    var fired = false;
+    function trigger() {
+      if (fired) return; fired = true;
+      if ('requestIdleCallback' in window) requestIdleCallback(loadThirdParty, {timeout: 3000});
+      else setTimeout(loadThirdParty, 1000);
+      window.removeEventListener('scroll', trigger);
+      window.removeEventListener('pointerdown', trigger);
+      window.removeEventListener('keydown', trigger);
+    }
+    window.addEventListener('scroll', trigger, { passive: true });
+    window.addEventListener('pointerdown', trigger);
+    window.addEventListener('keydown', trigger);
+    setTimeout(trigger, 3000);
+  })();
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="assets/css/vendor.css" data-precedence="next">
-<link rel="stylesheet" href="assets/css/main.css">
+<link rel="preload" href="assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/styles.min.css">
 <link rel="preload" as="video" href="assets/vsl/MiniVSL_720p_vp9.webm" type="video/webm" fetchpriority="high">
 <link rel="preload" as="video" href="assets/vsl/MiniVSL_720p_faststart.mp4" type="video/mp4" fetchpriority="high">
 <title>MegaMoldes Kids - Diversão Longe das Telas</title>
 <meta name="description" content="A maneira mais rápida, fácil e econômica de tirar as crianças das telas.">
 <link rel="stylesheet" href="assets/css/fonts.css">
-<link rel="preconnect" href="https://cdn.tailwindcss.com">
 <link rel="preload" as="image" href="assets/img/hero-image-v2.png" fetchpriority="high">
 <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" sizes="16x16">
 <script>document.querySelectorAll('body link[rel="icon"], body link[rel="apple-touch-icon"]').forEach(el => document.head.appendChild(el))</script>
@@ -45,7 +61,7 @@
         <p class="mt-4 text-center text-gray-700 text-base md:text-lg">O acervo completo para imprimir, recortar e montar em família. Diversão infinita por um preço simbólico.</p>
         <div class="mt-6 flex justify-center">
             <div class="relative w-full max-w-md">
-                <video id="mini-vsl" class="w-full rounded-xl shadow-2xl" playsinline muted autoplay preload="auto" poster="assets/img/hero-image-v2.png">
+                <video id="mini-vsl" width="1280" height="720" class="w-full rounded-xl shadow-2xl" playsinline muted autoplay preload="auto" poster="assets/img/hero-image-v2.png">
                     <source src="assets/vsl/MiniVSL_720p_vp9.webm" type="video/webm">
                     <source src="assets/vsl/MiniVSL_720p_faststart.mp4" type="video/mp4">
                 </video>
@@ -80,6 +96,16 @@
 </section>
 
 <script src="assets/js/main.js" defer></script>
-<script src="assets/js/security.js" defer></script>
+<script>
+  (function(){
+    function loadSecurity(){
+      var s=document.createElement('script');
+      s.src='assets/js/security.js'; s.defer=true;
+      document.body.appendChild(s);
+    }
+    window.addEventListener('pointerdown', loadSecurity, { once: true });
+    window.addEventListener('keydown', loadSecurity, { once: true });
+  })();
+</script>
 </body>
 </html>
