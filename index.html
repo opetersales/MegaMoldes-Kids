@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="assets/css/vendor.css" data-precedence="next">
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="stylesheet" href="assets/css/styles.min.css">
+<link rel="preload" as="video" href="assets/vsl/MiniVSL.mp4" fetchpriority="high">
 <!-- Scripts removidos para evitar conflito com a edição estática -->
 <title>MegaMoldes Kids - Diversão Longe das Telas</title>
 <meta name="description" content="A maneira mais rápida, fácil e econômica de tirar as crianças das telas.">
@@ -36,7 +37,7 @@
     <!-- Dynamic Date Scarcity Bar (Fixed Header) -->
     <div class="fixed top-0 left-0 w-full bg-red-600 text-white text-center py-3 font-bold z-50 shadow-md">
         <div class="container mx-auto text-xs md:text-base tracking-wide px-4">
-            ⚠️ ATENÇÃO: O preço promocional de lançamento acaba HOJE, <span id="dynamic-date"></span>, às 23:59.
+            ⚠️ ATENÇÃO: O preço promocional acaba <span id="dynamic-date"></span>, às 23:59.
         </div>
     </div>
     <!-- Spacer to prevent content overlap -->
@@ -48,7 +49,7 @@
         <p class="mt-4 text-center text-gray-700 text-base md:text-lg">O acervo completo para imprimir, recortar e montar em família. Diversão infinita por um preço simbólico.</p>
         <div class="mt-6 flex justify-center">
             <div class="relative w-full max-w-md">
-                <video id="mini-vsl" class="w-full rounded-xl shadow-2xl" src="assets/vsl/MiniVSL.mp4" playsinline muted preload="auto"></video>
+                <video id="mini-vsl" class="w-full rounded-xl shadow-2xl" src="assets/vsl/MiniVSL.mp4" playsinline muted autoplay preload="auto" poster="assets/img/hero-image-v2.png"></video>
                 <button id="mini-vsl-audio" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 px-5 py-3 rounded-full bg-black/70 text-white font-bold shadow-lg">🔊 TOQUE PARA OUVIR</button>
             </div>
         </div>
