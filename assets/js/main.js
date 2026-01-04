@@ -39,7 +39,7 @@
         const mini = document.getElementById('mini-landing');
         if (!mini) return;
         mini.classList.remove('hidden');
-        const premiumDiscountLink = 'https://pay.cakto.com.br/3bpvym4_706426';
+        const premiumDiscountLink = 'https://pay.cakto.com.br/sgebuwo_702170';
         const miniCta = document.getElementById('mini-cta');
         const miniCtaFinal = document.getElementById('mini-cta-final');
         if (miniCta) miniCta.setAttribute('href', premiumDiscountLink);
