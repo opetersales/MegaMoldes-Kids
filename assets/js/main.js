@@ -118,6 +118,23 @@
         const miniCtaFinal = document.getElementById('mini-cta-final');
         if (miniCta) miniCta.setAttribute('href', premiumDiscountLink);
         if (miniCtaFinal) miniCtaFinal.setAttribute('href', premiumDiscountLink);
+        const video = document.getElementById('mini-vsl');
+        const audioBtn = document.getElementById('mini-vsl-audio');
+        if (video) {
+            video.muted = true;
+            video.play().catch(() => {});
+        }
+        if (video && audioBtn) {
+            audioBtn.addEventListener('click', () => {
+                try {
+                    video.pause();
+                    video.currentTime = 0;
+                    video.muted = false;
+                    video.play().catch(() => {});
+                    audioBtn.classList.add('hidden');
+                } catch (_) {}
+            });
+        }
     }
 
 })();
